@@ -2,7 +2,6 @@ from django.db import models
 
 
 class Article(models.Model):
-    id = models.AutoField(auto_created=True, primary_key=True)
     title = models.CharField(max_length=256, verbose_name='Название')
     text = models.TextField(verbose_name='Текст')
     published_at = models.DateTimeField(verbose_name='Дата публикации')
